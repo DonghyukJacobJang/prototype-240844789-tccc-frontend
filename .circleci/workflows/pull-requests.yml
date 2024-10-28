@@ -1,0 +1,30 @@
+version: 2.1
+
+workflows:
+  version: 2
+  pull-requests:
+    jobs:
+      - setup:
+          context: NEXTJS_BOILERPLATE
+          filters:
+            branches:
+              ignore:
+                - develop
+                - staging
+                - main
+      - linters:
+          name: linters
+          requires:
+            - setup
+      - secrets-key-detection:
+          requires:
+            - setup
+      - build:
+          requires:
+            - linters
+            - secrets-key-detection
+      - preview-environment:
+          context: GITHUB_CREDENTIALS
+          requires:
+            - build
+          env_suffix: '_DEV'

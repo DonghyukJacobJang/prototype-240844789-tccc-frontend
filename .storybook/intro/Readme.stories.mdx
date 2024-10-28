@@ -1,0 +1,10 @@
+import { Meta } from '@storybook/addon-docs'
+import { Markdown } from '@storybook/blocks'
+
+import Readme from '../../README.md?raw'
+
+<Meta title="intro/Readme" />
+
+<Markdown>
+  {Readme.replaceAll('./docs/', 'https://github.com/Experience-Monks/nextjs-boilerplate/blob/main/docs/')}
+</Markdown>
