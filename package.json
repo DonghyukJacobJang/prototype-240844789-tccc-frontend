@@ -9,6 +9,7 @@
     "dev:imports": "node scripts/imports-watch.js",
     "dev:storybook": "storybook dev --no-open -p 9001",
     "build:next": "npm run scripts && next build",
+    "build:azure": "npm run scripts && next build",
     "build:postcss": "postcss ./out/**/*.css --use css-declaration-sorter --replace --no-map",
     "build:sitemap": "next-sitemap",
     "build:storybook": "npm run scripts && storybook build -c .storybook -o ./out-storybook",
