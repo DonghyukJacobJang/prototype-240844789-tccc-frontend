@@ -32,7 +32,8 @@
     "adviser:ci": "adviser --tags ci --verbose --quiet",
     "generate": "plop",
     "preinstall": "npm i -g husky@8.0.3",
-    "prepare": "husky install && node scripts/prepare.js",
+    "prepare": "husky install",
+    "local:prepare": "node scripts/prepare.js",
     "tsc": "tsc"
   },
   "engines": {
