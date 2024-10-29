@@ -55,7 +55,7 @@
     "bowser": "^2.11.0",
     "classnames": "^2.3.2",
     "focus-visible": "^5.2.0",
-    "gsap": "npm:@gsap/business@3.12.5",
+    "gsap": "file:./gsap-bonus-3.12.5.tgz",
     "immer": "^10.0.3",
     "js-cookie": "^3.0.5",
     "lodash.camelcase": "^4.3.0",
