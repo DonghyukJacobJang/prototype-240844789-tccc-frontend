@@ -1,5 +1,6 @@
 # Welcome to Monks NextJS Generator! 🚀
 
+prototype
 Hey there, developer! Ready to dive into our awesome NextJS Boilerplate? This guide will help you set up and start developing in no time. Let's get started!
 
 ## Table of Contents
